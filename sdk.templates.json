@@ -1,0 +1,26 @@
+{
+  "official": [
+    {
+      "title": "NodeJs server",
+      "name": "node-server",
+      "description": "NodeJs hook server SDK template for fireboom",
+      "url": "https://github.com/fireboomio/sdk-template_node-server.git",
+      "defaultOutputPath": "./custom-ts/generated"
+    },
+    {
+      "title": "React hooks",
+      "name": "react-hooks",
+      "description": "React hooks SDK template for fireboom",
+      "url": "https://github.com/fireboomio/sdk-template_react-hooks.git",
+      "defaultOutputPath": "./sdk/react-hooks"
+    },
+    {
+      "title": "微信小程序",
+      "name": "miniapp",
+      "description": "Fireboom 小程序 SDK 模板",
+      "url": "https://github.com/fireboomio/sdk-template_miniapp.git",
+      "defaultOutputPath": "./sdk/miniapp"
+    }
+  ],
+  "community": []
+}
