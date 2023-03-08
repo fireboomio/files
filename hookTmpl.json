@@ -5,8 +5,8 @@
   },
   "auth": {
     "postAuthentication": "import { AuthenticationHookRequest } from 'fireboom-wundersdk/server'\n\nexport default async function postAuthentication(hook: AuthenticationHookRequest) : Promise<void>{\n\t// TODO: 在此处添加代码\n}",
-    "mutatingPostAuthentication": "import { AuthenticationHookRequest, AuthenticationResponse } from 'fireboom-wundersdk/server'\nimport type { User } from \"generated/fireboom.server\"\nexport default async function mutatingPostAuthentication(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse<User>>{\n\t// TODO: 在此处添加代码\n\treturn {\n\t\tstatus:'deny',\n\t\tmessage: 'string'\n\t}\n}",
-    "revalidate": "import { AuthenticationHookRequest, AuthenticationResponse } from 'fireboom-wundersdk/server'\nimport type { User } from \"generated/fireboom.server\"\nexport default async function revalidate(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse<User>>{\n  // TODO: 在此处添加代码\n  return {\n    status:'deny',\n    message: 'string'\n  }\n}",
+    "mutatingPostAuthentication": "import { AuthenticationHookRequest, AuthenticationResponse } from 'fireboom-wundersdk/server'\nimport type { User } from \"generated/claims\"\nexport default async function mutatingPostAuthentication(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse<User>>{\n\t// TODO: 在此处添加代码\n\treturn {\n\t\tstatus:'deny',\n\t\tmessage: 'string'\n\t}\n}",
+    "revalidate": "import { AuthenticationHookRequest, AuthenticationResponse } from 'fireboom-wundersdk/server'\nimport type { User } from \"generated/claims\"\nexport default async function revalidate(hook: AuthenticationHookRequest) : Promise<AuthenticationResponse<User>>{\n  // TODO: 在此处添加代码\n  return {\n    status:'deny',\n    message: 'string'\n  }\n}",
     "postLogout": "import { AuthenticationHookRequest, AuthenticationResponse } from 'fireboom-wundersdk/server'\n\nexport default async function postLogout(hook: AuthenticationHookRequest) : Promise<void>{\n\t// TODO: 在此处添加代码\n}"
   },
   "hook": {
