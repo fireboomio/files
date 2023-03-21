@@ -42,7 +42,7 @@
     ]
   },
   "upload": {
-    "preUpload": "import { Uploads } from 'generated/fireboom.hooks'\n\nconst preUpload: NonNullable<NonNullable<NonNullable<Uploads['$STORAGE_NAME$']>['$PROFILE_NAME$']>['preUpload']> = ({ user, file, meta }) => {\n  // TODO 在这里添加逻辑\n}\n\nexport default preUpload"
+    "preUpload": "import { Uploads } from 'generated/fireboom.hooks'\n\nconst preUpload: NonNullable<NonNullable<NonNullable<Uploads['$STORAGE_NAME$']>['$PROFILE_NAME$']>['preUpload']> = ({ user, file, meta }) => {\n  // TODO 在这里添加逻辑\n}\n\nexport default preUpload",
     "postUpload": "import { Uploads } from 'generated/fireboom.hooks'\n\nconst postUpload: NonNullable<NonNullable<NonNullable<Uploads['$STORAGE_NAME$']>['$PROFILE_NAME$']>['postUpload']> = async ({ user, file, meta, internalClient, error }) => {\n  // TODO 在这里添加逻辑\n}\n\nexport default postUpload"
   }
 }
