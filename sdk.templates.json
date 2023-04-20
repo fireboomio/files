@@ -3,6 +3,7 @@
     {
       "title": "NodeJs server",
       "name": "node-server",
+      "author": "fireboom",
       "version": "latest",
       "description": "NodeJs hook server SDK template for fireboom",
       "type": "server",
@@ -14,6 +15,7 @@
     {
       "title": "Golang server",
       "name": "golang-server",
+      "author": "fireboom",
       "version": "latest",
       "description": "Golang hook server SDK template for fireboom",
       "type": "server",
@@ -25,6 +27,7 @@
     {
       "title": "React hooks",
       "name": "react-hooks",
+      "author": "fireboom",
       "version": "latest",
       "description": "React hooks SDK template for fireboom",
       "type": "client",
@@ -36,6 +39,7 @@
     {
       "title": "微信小程序",
       "name": "miniapp",
+      "author": "fireboom",
       "version": "latest",
       "description": "Fireboom 小程序 SDK 模板",
       "type": "client",
