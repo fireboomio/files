@@ -1,5 +1,6 @@
 {
   "global": {
+    "beforeRequest": "package global\n\nimport (\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc BeforeOriginRequest(hook *base.HttpTransportHookRequest, body *plugins.HttpTransportBody) (*base.ClientRequest, error) {\n\treturn body.Request, nil\n}\n",
     "onRequest": "package global\n\nimport (\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc OnOriginRequest(hook *base.HttpTransportHookRequest, body *plugins.HttpTransportBody) (*base.ClientRequest, error) {\n\treturn body.Request, nil\n}\n",
     "onResponse": "package global\n\nimport (\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc OnOriginResponse(hook *base.HttpTransportHookRequest, body *plugins.HttpTransportBody) (*base.ClientResponse, error) {\n\treturn body.Response, nil\n}\n",
     "onConnectionInit": "import type { WsTransportHookRequest } from 'generated/fireboom.hooks'\nimport type { WsTransportOnConnectionInitResponse } from 'fireboom-wundersdk/server'\n\nexport default async function onConnectionInit(hook: WsTransportHookRequest): Promise<WsTransportOnConnectionInitResponse> {\n  return {\n    payload: {\n      // your code here\n    }\n  }\n}"
