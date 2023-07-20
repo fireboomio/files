@@ -39,7 +39,7 @@
     ]
   },
   "upload": {
-    "preUpload": "package $PROFILE_NAME$\n\nimport (\n\t\"custom-go/generated\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc PreUpload(request *base.UploadHookRequest, body *plugins.UploadBody[generated.^$STORAGE_NAME$_$PROFILE_NAME$ProfileMeta]) (*base.UploadHookResponse, error) {\n\treturn &base.UploadHookResponse{FileKey: body.File.Name}, nil\n}\n",
-    "postUpload": "package $PROFILE_NAME$\n\nimport (\n\t\"custom-go/generated\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc PostUpload(request *base.UploadHookRequest, body *plugins.UploadBody[generated.^$STORAGE_NAME$_$PROFILE_NAME$ProfileMeta]) (*base.UploadHookResponse, error) {\n\treturn nil, nil\n}\n"
+    "preUpload": "package $PROFILE_NAME$\n\nimport (\n\t\"custom-go/generated\"\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc PreUpload(request *base.UploadHookRequest, body *plugins.UploadBody[generated.^$STORAGE_NAME$_$PROFILE_NAME$ProfileMeta]) (*base.UploadHookResponse, error) {\n\treturn &base.UploadHookResponse{FileKey: body.File.Name}, nil\n}\n",
+    "postUpload": "package $PROFILE_NAME$\n\nimport (\n\t\"custom-go/generated\"\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc PostUpload(request *base.UploadHookRequest, body *plugins.UploadBody[generated.^$STORAGE_NAME$_$PROFILE_NAME$ProfileMeta]) (*base.UploadHookResponse, error) {\n\treturn nil, nil\n}\n"
   }
 }
