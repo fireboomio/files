@@ -8,7 +8,7 @@
   "auth": {
     "postAuthentication": "package auth\n\nimport \"custom-go/pkg/base\"\n\nfunc PostAuthentication(hook *base.AuthenticationHookRequest) error {\n\treturn nil\n}",
     "mutatingPostAuthentication": "package auth\n\nimport (\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc MutatingPostAuthentication(hook *base.AuthenticationHookRequest) (*plugins.AuthenticationResponse, error) {\n\treturn &plugins.AuthenticationResponse{User: hook.User, Status: \"ok\"}, nil\n}\n",
-    "revalidate": "package auth\n\nimport (\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc Revalidate(hook *base.AuthenticationHookRequest) (*plugins.AuthenticationResponse, error) {\n\treturn nil, nil\n}",
+    "revalidateAuthentication": "package auth\n\nimport (\n\t\"custom-go/pkg/base\"\n\t\"custom-go/pkg/plugins\"\n)\n\nfunc Revalidate(hook *base.AuthenticationHookRequest) (*plugins.AuthenticationResponse, error) {\n\treturn nil, nil\n}",
     "postLogout": "package auth\n\nimport \"custom-go/pkg/base\"\n\nfunc PostLogout(hook *base.AuthenticationHookRequest) error {\n\treturn nil\n}"
   },
   "hook": {
