@@ -66,7 +66,7 @@
 			"type": "client",
 			"language": "dart",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_flutter.git",
-			"gitBranch": "main",
+			"gitBranch": "V2.0",
 			"outputPath": "./sdk/flutter",
 			"icon": "<svg height='40' viewBox='0 0 40 40' width='40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><linearGradient id='a' x1='3.949441%' x2='75.898349%' y1='27.473268%' y2='52.85833%'><stop offset='0'/><stop offset='1' stop-opacity='0'/></linearGradient><g fill='none' fill-rule='evenodd'><rect fill='#1e66c8' height='40' rx='2' width='40'/><g fill-rule='nonzero' transform='translate(8 6)'><path d='m13.5882489 0-13.5882489 13.4453519 4.20582345 4.161594 17.79416705-17.6069459z' fill='#47c5fb'/><path d='m13.4935668 12.3990786-7.27553674 7.1990256 4.22163694 4.2396427 4.1980587-4.153911 7.3622743-7.2847573z' fill='#47c5fb'/><path d='m10.4397049 23.8377656 3.1958425 3.1622344h8.3643958l-7.3622743-7.3161454z' fill='#00569e'/><path d='m6.17070318 19.6449053 4.20591812-4.1616878 4.2610287 4.2006652-4.1979641 4.153911z' fill='#00b5f8'/><path d='m10.4396859 23.8377937 3.4956363-1.1477739.3472342-2.6547777z' fill='url(#a)' fill-opacity='.8'/></g></g></svg>"
 		}
