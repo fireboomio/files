@@ -5,8 +5,8 @@
     "function": false
   },
   "golang-server": {
-    "customize": false,
-    "proxy": false,
-    "function": false
+    "customize": true,
+    "proxy": true,
+    "function": true
   }
 }
