@@ -10,6 +10,7 @@
 			"type": "server",
 			"language": "typescript",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_node-server.git",
+			"gitBranch": "V2.0",
 			"outputPath": "./custom-ts",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/nodejs.svg"
 		},
@@ -24,6 +25,7 @@
 			"language": "typescript",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_nodejs.git",
 			"outputPath": "./custom-ts",
+			"gitBranch": "main",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/nodejs.svg"
 		},
 		{
@@ -36,6 +38,7 @@
 			"type": "server",
 			"language": "go",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_go-server.git",
+			"gitBranch": "V2.0",
 			"outputPath": "./custom-go",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/golang.svg"
 		},
@@ -49,6 +52,7 @@
 			"type": "client",
 			"language": "typescript",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_ts-client.git",
+			"gitBranch": "V2.0",
 			"outputPath": "./sdk/ts-client",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/typescript.svg"
 		},
@@ -75,6 +79,7 @@
 			"type": "client",
 			"language": "dart",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_flutter.git",
+			"gitBranch": "V2.0",
 			"outputPath": "./sdk/flutter",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/flutter.svg"
 		}

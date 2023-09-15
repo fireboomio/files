@@ -1,14 +1,14 @@
 [
   {
-    "title": "fireboom",
-    "content": "fireboom news",
+    "title": "FireboomV2.0强制更新提醒",
+    "content": "FireboomV2.0计划8月28日发布，请查看详情",
     "time": 1672295218815,
-    "url": "https://fireboom.io/"
+    "url": "https://github.com/fireboomio/fb-migration/"
   },
   {
-    "title": "fireboom",
-    "content": "fireboom news",
+    "title": "更新日志",
+    "content": "fireboom所有更新记录",
     "time": 1672381618815,
-    "url": "https://fireboom.io/"
+    "url": "https://docs.fireboom.io/geng-xin-ri-zhi"
   }
 ]
