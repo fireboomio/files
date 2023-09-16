@@ -1,0 +1,89 @@
+{
+	"official": [
+		{
+			"title": "NodeJs server",
+			"name": "node-server",
+			"author": "fireboom",
+			"version": "latest",
+			"extension": ".ts",
+			"description": "NodeJs hook server SDK template for fireboom",
+			"type": "server",
+			"language": "typescript",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_nodejs-server.git",
+			"outputPath": "./custom-ts",
+			"gitBranch": "V2.0",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/nodejs.svg"
+		},
+		{
+			"title": "Golang server",
+			"name": "golang-server",
+			"author": "fireboom",
+			"version": "latest",
+			"extension": ".go",
+			"description": "Golang hook server SDK template for fireboom",
+			"type": "server",
+			"language": "go",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_go-server.git",
+			"gitBranch": "V2.0",
+			"outputPath": "./custom-go",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/golang.svg"
+		},
+		{
+			"title": "Java server",
+			"name": "java-server",
+			"author": "fireboom",
+			"version": "latest",
+			"extension": ".java",
+			"description": "Java hook server SDK template for fireboom",
+			"type": "server",
+			"language": "java",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_java-server.git",
+			"gitBranch": "V2.0",
+			"outputPath": "./custom-java",
+			"codePackage": "src/main/io/fireboom",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/java.svg"
+		},
+		{
+			"title": "Typescript client",
+			"name": "ts-client",
+			"extension": ".ts",
+			"author": "fireboom",
+			"version": "latest",
+			"description": "Base typescript client",
+			"type": "client",
+			"language": "typescript",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_ts-client.git",
+			"gitBranch": "V2.0",
+			"outputPath": "./sdk/ts-client",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/typescript.svg"
+		},
+		{
+			"title": "微信小程序",
+			"name": "miniapp",
+			"extension": ".ts",
+			"author": "fireboom",
+			"version": "latest",
+			"description": "Fireboom 小程序 SDK 模板",
+			"type": "client",
+			"language": "typescript",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_miniapp.git",
+			"outputPath": "./sdk/miniapp",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/miniapp.svg"
+		},
+		{
+			"title": "Flutter",
+			"name": "flutter",
+			"extension": ".dart",
+			"author": "fireboom",
+			"version": "latest",
+			"description": "Flutter 版本 SDK，支持 Operation 调用、S3 上传等",
+			"type": "client",
+			"language": "dart",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_flutter.git",
+			"gitBranch": "V2.0",
+			"outputPath": "./sdk/flutter",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/flutter.svg"
+		}
+	],
+	"community": []
+}
