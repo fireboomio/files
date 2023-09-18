@@ -7,18 +7,18 @@ import (
 	"time"
 )
 
-type Person struct {
+type <%= it.upperFirst(it.name) %>_Person struct {
 	Id        int    `json:"id"`
 	FirstName string `json:"firstName"`
 	LastName  string `json:"lastName"`
 }
 
-var testPeopleData = []Person{
+var <%= it.name %>_testPeopleData = []<%= it.upperFirst(it.name) %>_Person{
 	{Id: 1, FirstName: "John", LastName: "Doe"},
 	{Id: 2, FirstName: "Jane", LastName: "Doe"},
 }
-var personType = graphql.NewObject(graphql.ObjectConfig{
-	Name: "Person",
+var <%= it.name %>_personType = graphql.NewObject(graphql.ObjectConfig{
+	Name: "<%= it.upperFirst(it.name) %>_Person",
 	Fields: graphql.Fields{
 		"id":        &graphql.Field{Type: graphql.Int},
 		"firstName": &graphql.Field{Type: graphql.String},
@@ -27,9 +27,9 @@ var personType = graphql.NewObject(graphql.ObjectConfig{
 })
 
 var (
-	queryFields = graphql.Fields{
+	<%= it.name %>_queryFields = graphql.Fields{
 		"GetOnePerson": &graphql.Field{
-			Type: personType,
+			Type: <%= it.name %>_personType,
 			Args: graphql.FieldConfigArgument{
 				"id": &graphql.ArgumentConfig{
 					Type: graphql.Int,
@@ -42,7 +42,7 @@ var (
 				}
 				id, ok := params.Args["id"].(int)
 				if ok {
-					for _, p := range testPeopleData {
+					for _, p := range <%= it.name %>_testPeopleData {
 						if p.Id == id {
 							return p, nil
 						}
@@ -53,9 +53,9 @@ var (
 		},
 	}
 
-	mutationFields = graphql.Fields{
+	<%= it.name %>_mutationFields = graphql.Fields{
 		"UpdateOnePerson": &graphql.Field{
-			Type: personType,
+			Type: <%= it.name %>_personType,
 			Args: graphql.FieldConfigArgument{
 				"id": &graphql.ArgumentConfig{
 					Type: graphql.Int,
@@ -71,7 +71,7 @@ var (
 				_ = plugins.GetGraphqlContext(params)
 				id, ok := params.Args["id"].(int)
 				if ok {
-					for _, p := range testPeopleData {
+					for _, p := range <%= it.name %>_testPeopleData {
 						if p.Id == id {
 							firstName, ok := params.Args["firstName"].(string)
 							if ok {
@@ -88,13 +88,13 @@ var (
 				}
 				return nil, nil
 			},
-			Description: "Update Person By Id",
+			Description: "Update <%= it.upperFirst(it.name) %>_Person By Id",
 		},
 	}
 
-	subscriptionFields = graphql.Fields{
+	<%= it.name %>_subscriptionFields = graphql.Fields{
 		"SubscriptionPerson": &graphql.Field{
-			Type: personType,
+			Type: <%= it.name %>_personType,
 			Resolve: func(params graphql.ResolveParams) (interface{}, error) {
 				return params.Source, nil
 			},
@@ -105,7 +105,7 @@ var (
 					var i int
 					for {
 						i++
-						person := Person{Id: i, FirstName: "John", LastName: "Doe"}
+						person := <%= it.upperFirst(it.name) %>_Person{Id: i, FirstName: "John", LastName: "Doe"}
 
 						select {
 						case <-params.Context.Done():
@@ -135,15 +135,15 @@ var (
 var <%= it.upperFirst(it.name) %>_schema, _ = graphql.NewSchema(graphql.SchemaConfig{
 	Query: graphql.NewObject(graphql.ObjectConfig{
 		Name:   "query",
-		Fields: queryFields,
+		Fields: <%= it.name %>_queryFields,
 	}),
 	Mutation: graphql.NewObject(graphql.ObjectConfig{
 		Name:   "mutation",
-		Fields: mutationFields,
+		Fields: <%= it.name %>_mutationFields,
 	}),
 	Subscription: graphql.NewObject(graphql.ObjectConfig{
 		Name:   "subscription",
-		Fields: subscriptionFields,
+		Fields: <%= it.name %>_subscriptionFields,
 	}),
 })
 
