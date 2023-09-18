@@ -54,7 +54,7 @@
 			"language": "typescript",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_ts-client.git",
 			"gitBranch": "V2.0",
-			"outputPath": "./sdk/ts-client",
+			"outputPath": "./generated-sdk/ts-client",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/typescript.svg"
 		},
 		{
@@ -67,7 +67,7 @@
 			"type": "client",
 			"language": "typescript",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_miniapp.git",
-			"outputPath": "./sdk/miniapp",
+			"outputPath": "./generated-sdk/miniapp",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/miniapp.svg"
 		},
 		{
@@ -81,7 +81,7 @@
 			"language": "dart",
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_flutter.git",
 			"gitBranch": "V2.0",
-			"outputPath": "./sdk/flutter",
+			"outputPath": "./generated-sdk/flutter",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/flutter.svg"
 		}
 	],
