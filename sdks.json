@@ -58,6 +58,20 @@
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/typescript.svg"
 		},
 		{
+			"title": "JavaScript client",
+			"name": "js-client",
+			"extension": ".ts",
+			"author": "fireboom",
+			"version": "latest",
+			"description": "UMD style javascript client",
+			"type": "client",
+			"language": "javascript",
+			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_js-client.git",
+			"gitBranch": "V2.0",
+			"outputPath": "./generated-sdk/js-client",
+			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/javascript.svg"
+		},
+		{
 			"title": "微信小程序",
 			"name": "miniapp",
 			"extension": ".ts",
