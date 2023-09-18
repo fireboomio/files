@@ -41,7 +41,7 @@ const schema = new GraphQLSchema({
   }),
 })
 
-registerCustomizeGraphQL('<%= it.customizeName %>', {
+registerCustomizeGraphQL('<%= it.name %>', {
   enableGraphQLEndpoint: true,
   baseContext: {
     hello: 'hello world'

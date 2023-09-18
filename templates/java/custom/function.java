@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component(value = "<%= it.packageName %>/<%= it.functionName %>")
-public class <%= it.functionName %> extends FunctionHooks<Test.Input, Test.Output> {
+@Component(value = "<%= it.packageName %>/<%= it.name %>")
+public class <%= it.name %> extends FunctionHooks<Test.Input, Test.Output> {
 
     @Override
     protected OperationHooks.OperationHookBody<Test.Input, Test.Output> execute(OperationHooks.OperationHookBody<Test.Input, Test.Output> body) {

@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component(value = "<%= it.packageName %>/<%= it.proxyName %>")
-public class <%= it.proxyName %> extends ProxyHooks {
+@Component(value = "<%= it.packageName %>/<%= it.name %>")
+public class <%= it.name %> extends ProxyHooks {
 
     @Override
     protected OnResponseHookResponse execute(OnRequestHookPayload body) {

@@ -1,6 +1,6 @@
 import { registerMockResolve } from "@fireboom/server";
 
-registerMockResolve('<%= it.operationName %>', async (ctx) => {
+registerMockResolve('<%= it.name %>', async (ctx) => {
   // console.log(ctx.input)
   return {
     response: { data: 'Mocked data' }

@@ -8,10 +8,10 @@ import (
 )
 
 func init() {
-	plugins.RegisterProxyHook(<%= it.proxyName %>, wgpb.OperationType_MUTATION)
+	plugins.RegisterProxyHook(<%= it.name %>, wgpb.OperationType_MUTATION)
 }
 
-func <%= it.proxyName %>(hook *base.HttpTransportHookRequest, body *plugins.HttpTransportBody) (*base.ClientResponse, error) {
+func <%= it.name %>(hook *base.HttpTransportHookRequest, body *plugins.HttpTransportBody) (*base.ClientResponse, error) {
 	// do something here ...
 	body.Response = &base.ClientResponse{
 		StatusCode: http.StatusOK,

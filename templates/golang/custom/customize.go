@@ -132,7 +132,7 @@ var (
 	}
 )
 
-var <%= it.upperFirst(it.customizeName) %>_schema, _ = graphql.NewSchema(graphql.SchemaConfig{
+var <%= it.upperFirst(it.name) %>_schema, _ = graphql.NewSchema(graphql.SchemaConfig{
 	Query: graphql.NewObject(graphql.ObjectConfig{
 		Name:   "query",
 		Fields: queryFields,
@@ -148,5 +148,5 @@ var <%= it.upperFirst(it.customizeName) %>_schema, _ = graphql.NewSchema(graphql
 })
 
 func init() {
-	plugins.RegisterGraphql(&<%= it.upperFirst(it.customizeName) %>_schema)
+	plugins.RegisterGraphql(&<%= it.upperFirst(it.name) %>_schema)
 }

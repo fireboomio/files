@@ -1,6 +1,6 @@
 import { OperationType, registerFunctionHandler } from "@fireboom/server";
 
-registerFunctionHandler('<%= it.functionName %>', {
+registerFunctionHandler('<%= it.name %>', {
   input: {
     type: 'object',
     properties: {

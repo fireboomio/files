@@ -1,5 +1,5 @@
 import { registerPreResolve } from "@fireboom/server";
 
-registerPreResolve('<%= it.operationName %>', async (ctx) => {
+registerPreResolve('<%= it.name %>', async (ctx) => {
   console.log(ctx.input)
 })

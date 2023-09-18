@@ -1,6 +1,6 @@
 import { registerCustomResolve } from "@fireboom/server";
 
-registerCustomResolve('<%= it.operationName %>', async (ctx) => {
+registerCustomResolve('<%= it.name %>', async (ctx) => {
   return {
     response: 'custom response'
   }

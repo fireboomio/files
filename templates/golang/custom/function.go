@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	plugins.RegisterFunction[loginReq, loginRes](<%= it.functionName %>, wgpb.OperationType_MUTATION)
+	plugins.RegisterFunction[loginReq, loginRes](<%= it.name %>, wgpb.OperationType_MUTATION)
 }
 
 type loginReq struct {
@@ -26,7 +26,7 @@ type loginRes struct {
 	Data string `json:"data"`
 }
 
-func <%= it.functionName %>(hook *base.HookRequest, body *base.OperationBody[loginReq, loginRes]) (*base.OperationBody[loginReq, loginRes], error) {
+func <%= it.name %>(hook *base.HookRequest, body *base.OperationBody[loginReq, loginRes]) (*base.OperationBody[loginReq, loginRes], error) {
 	if body.Input.Username != "John" || body.Input.Password != "123456" {
 		body.Response = &base.OperationBodyResponse[loginRes]{
 			Errors: []base.GraphQLError{{Message: "username or password wrong"}},

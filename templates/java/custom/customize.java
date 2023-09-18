@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 @Slf4j
-@Component(value = "customize/<%= it.customizeName %>")
-public class <%= it.customizeName %> extends CustomizeHooks {
+@Component(value = "customize/<%= it.name %>")
+public class <%= it.name %> extends CustomizeHooks {
     GraphQLObjectType bookType = GraphQLObjectType.newObject()
                                                   .name("Book")
                                                   .field(GraphQLFieldDefinition.newFieldDefinition()
