@@ -1,20 +1,6 @@
 {
 	"official": [
 		{
-			"title": "NodeJs server",
-			"name": "node-server",
-			"author": "fireboom",
-			"version": "latest",
-			"extension": ".ts",
-			"description": "NodeJs hook server SDK template for fireboom",
-			"type": "server",
-			"language": "typescript",
-			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_node-server.git",
-			"gitBranch": "V2.0",
-			"outputPath": "./custom-ts",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/nodejs.svg"
-		},
-		{
 			"title": "NodeJs new server",
 			"name": "node-server-new",
 			"author": "fireboom",
