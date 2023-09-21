@@ -1,8 +1,8 @@
 {
   "node-server": {
-    "customize": false,
-    "proxy": false,
-    "function": false
+    "customize": true,
+    "proxy": true,
+    "function": true
   },
   "golang-server": {
     "customize": true,
