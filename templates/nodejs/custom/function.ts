@@ -15,6 +15,9 @@ registerFunctionHandler('<%= it.name %>', {
   },
   operationType: OperationType.SUBSCRIPTION,
   handler: async function* (request, ctx) {
-    yield '123'
+    for (let i = 0; i < 10; i++) {
+      yield `Hello ${i}`
+      await new Promise((resolve) => setTimeout(resolve, 1000))
+    }
   }
 })
