@@ -1,5 +1,10 @@
 import { FireboomExecutionContext, registerCustomizeGraphQL } from '@fireboom/server'
-import { GraphQLObjectType, GraphQLSchema, GraphQLString } from '@fireboom/server/dist/lib/graphql'
+import { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLInt } from '@fireboom/server/dist/lib/graphql'
+
+// if you want to use more controllable subscription, try use PubSub
+// import { PubSub } from "graphql-subscriptions";
+
+// const pubsub = new PubSub();
 
 type BaseContext = {
   hello: string
@@ -35,6 +40,41 @@ const schema = new GraphQLSchema({
         type: GraphQLString,
         resolve: async function (_root, _args, ctx) {
           return ctx.hello
+        },
+      },
+    }),
+  }),
+  subscription: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext>({
+    name: "Subscription",
+    fields: () => ({
+      count: {
+        type: GraphQLInt,
+        args: {
+          to: {
+            type: GraphQLInt,
+          },
+        },
+        subscribe: async function* (_root, args) {
+          for (let count = 1; count <= args.to; count++) {
+            await new Promise((resolve) => setTimeout(resolve, 1000));
+            yield { count };
+          }
+
+          // if you want to use pubsub
+          // do something to trigger publish
+          // eg: pubsub.publish('hello', { hello: 'world' })
+          // const asyncIterator = pubsub.asyncIterator('hello')
+          // try {
+          //   while(true) {
+          //     const ret = await asyncIterator.next()
+          //     if (ret.done) {
+          //       break
+          //     }
+          //     yield ret.value
+          //   }
+          // } finally {
+          //   asyncIterator.return?.()
+          // }
         },
       },
     }),
