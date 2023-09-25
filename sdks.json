@@ -40,7 +40,8 @@
 			"gitUrl": "https://code.100ai.com.cn/fireboomio/sdk-template_java-server.git",
 			"gitBranch": "V2.0",
 			"outputPath": "./custom-java",
-			"codePackage": "src/main/io/fireboom",
+			"codePackage": "src/main/java/io/fireboom",
+			"upperFirst": true,
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/java.svg"
 		},
 		{
