@@ -1,5 +1,5 @@
 import { registerRevalidate } from '@fireboom/server'
-import { FireboomRequestContext } from "@/operations";
+import { type FireboomRequestContext } from "@/operations";
 
 registerRevalidate((ctx): FireboomRequestContext => {
 	// TODO
