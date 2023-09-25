@@ -5,7 +5,7 @@ import { type FireboomRequestContext } from '@/operations'
 
 // const pubsub = new PubSub();
 
-registerFunctionHandler('<%= it.operationPath %>', {
+registerFunctionHandler('<%= it.name %>', {
   input: {
     type: 'object',
     properties: {
