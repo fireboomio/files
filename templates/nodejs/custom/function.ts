@@ -1,4 +1,5 @@
 import { OperationType, registerFunctionHandler } from "@fireboom/server";
+import { FireboomRequestContext } from "@/operations";
 // if you want to use more controllable subscription, try use PubSub
 // import { PubSub } from "graphql-subscriptions";
 
@@ -18,7 +19,7 @@ registerFunctionHandler('<%= it.name %>', {
     type: 'string'
   },
   operationType: OperationType.SUBSCRIPTION,
-  handler: async function* (input, ctx) {
+  handler: async function* (input, ctx: FireboomRequestContext) {
     for (let i = 0; i < 10; i++) {
       yield `Hello ${i}`
       await new Promise((resolve) => setTimeout(resolve, 1000))

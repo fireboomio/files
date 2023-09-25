@@ -1,5 +1,6 @@
 import { registerMutatingPostAuthentication } from '@fireboom/server'
+import { FireboomRequestContext } from "@/operations";
 
-registerMutatingPostAuthentication(ctx => {
+registerMutatingPostAuthentication((ctx: FireboomRequestContext) => {
 	return 'skip'
 })

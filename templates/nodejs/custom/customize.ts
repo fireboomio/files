@@ -1,5 +1,6 @@
 import { FireboomExecutionContext, registerCustomizeGraphQL } from '@fireboom/server'
 import { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLInt } from '@fireboom/server/dist/lib/graphql'
+import { FireboomRequestContext } from "@/operations";
 
 // if you want to use more controllable subscription, try use PubSub
 // import { PubSub } from "graphql-subscriptions";
@@ -11,7 +12,7 @@ type BaseContext = {
 }
 
 const schema = new GraphQLSchema({
-  mutation: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext>({
+  mutation: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext<FireboomRequestContext>>({
     name: "Mutation",
     fields: () => ({
       login: {
@@ -33,7 +34,7 @@ const schema = new GraphQLSchema({
       },
     }),
   }),
-  query: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext>({
+  query: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext<FireboomRequestContext>>({
     name: "Query",
     fields: () => ({
       yourName: {
@@ -44,7 +45,7 @@ const schema = new GraphQLSchema({
       },
     }),
   }),
-  subscription: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext>({
+  subscription: new GraphQLObjectType<any, BaseContext & FireboomExecutionContext<FireboomRequestContext>>({
     name: "Subscription",
     fields: () => ({
       count: {
