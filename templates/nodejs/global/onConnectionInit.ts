@@ -1,7 +1,7 @@
 import { registerOnConnectionInit } from '@fireboom/server'
-import { type FireboomRequestContext } from "@/operations";
+import { type FireboomRequestContext } from '@/operations'
 
-registerOnConnectionInit(async (ctx: FireboomRequestContext) => {
+registerOnConnectionInit<FireboomRequestContext>(async ctx => {
   // TODO
   return {
     payload: 'payload'

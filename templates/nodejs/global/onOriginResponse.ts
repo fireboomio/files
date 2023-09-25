@@ -1,7 +1,7 @@
 import { registerOnOriginResponse } from '@fireboom/server'
-import { type FireboomRequestContext } from "@/operations";
+import { type FireboomRequestContext } from '@/operations'
 
-registerOnOriginResponse(async (ctx: FireboomRequestContext) => {
+registerOnOriginResponse<FireboomRequestContext>(async ctx => {
   console.log(ctx)
   return ctx.response
 })

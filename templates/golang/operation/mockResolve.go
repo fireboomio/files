@@ -5,7 +5,7 @@ import (
 	"custom-go/pkg/base"
 )
 
-func MockResolve(hook *base.HookRequest, body generated.<%= it.name %>Body) (res generated.<%= it.name %>Body, err error) {
+func MockResolve(hook *base.HookRequest, body generated.<%= it.operationName %>Body) (res generated.<%= it.operationName %>Body, err error) {
 	hook.Logger().Info("MockResolve")
 	return body, nil
 }

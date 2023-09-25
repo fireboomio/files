@@ -1,11 +1,11 @@
-import { OperationType, registerFunctionHandler } from "@fireboom/server";
-import { type FireboomRequestContext } from "@/operations";
+import { OperationType, registerFunctionHandler } from '@fireboom/server'
+import { type FireboomRequestContext } from '@/operations'
 // if you want to use more controllable subscription, try use PubSub
 // import { PubSub } from "graphql-subscriptions";
 
 // const pubsub = new PubSub();
 
-registerFunctionHandler('<%= it.name %>', {
+registerFunctionHandler('<%= it.operationPath %>', {
   input: {
     type: 'object',
     properties: {

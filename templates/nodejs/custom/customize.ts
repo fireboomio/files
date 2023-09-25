@@ -1,6 +1,6 @@
 import { FireboomExecutionContext, registerCustomizeGraphQL } from '@fireboom/server'
 import { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLInt } from '@fireboom/server/dist/lib/graphql'
-import { type FireboomRequestContext } from "@/operations";
+import { type FireboomRequestContext } from '@/operations'
 
 // if you want to use more controllable subscription, try use PubSub
 // import { PubSub } from "graphql-subscriptions";
@@ -82,7 +82,7 @@ const schema = new GraphQLSchema({
   }),
 })
 
-registerCustomizeGraphQL('<%= it.name %>', {
+registerCustomizeGraphQL('<%= it.operationPath %>', {
   enableGraphQLEndpoint: true,
   baseContext: {
     hello: 'hello world'

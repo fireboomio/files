@@ -1,6 +1,6 @@
 import { registerPostAuthentication } from '@fireboom/server'
-import { type FireboomRequestContext } from "@/operations";
+import { type FireboomRequestContext } from '@/operations'
 
-registerPostAuthentication((ctx): FireboomRequestContext => {
+registerPostAuthentication<FireboomRequestContext>(ctx => {
 	return 'skip'
 })
