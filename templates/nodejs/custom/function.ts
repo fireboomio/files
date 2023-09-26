@@ -16,12 +16,18 @@ registerFunctionHandler('<%= it.name %>', {
     additionalProperties: false
   },
   response: {
-    type: 'string'
+    // only support object as root
+    type: 'object',
+    properties: {
+      "msg": {
+        type: 'string'
+      }
+    }
   },
   operationType: OperationType.SUBSCRIPTION,
   handler: async function* (input, ctx: FireboomRequestContext) {
     for (let i = 0; i < 10; i++) {
-      yield `Hello ${i}`
+      yield { msg: `Hello ${i}` }
       await new Promise((resolve) => setTimeout(resolve, 1000))
     }
 
@@ -35,7 +41,7 @@ registerFunctionHandler('<%= it.name %>', {
     //     if (ret.done) {
     //       break
     //     }
-    //     yield ret.value
+    //     yield { msg: ret.value }
     //   }
     // } finally {
     //   asyncIterator.return?.()
