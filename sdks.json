@@ -54,7 +54,7 @@
 			"type": "client",
 			"language": "typescript",
 			"gitUrl": "fireboomio/sdk-template_ts-client",
-			"gitBranch": "V2.0",
+			"gitBranch": "new",
 			"outputPath": "./generated-sdk/ts-client",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/typescript.svg"
 		},
