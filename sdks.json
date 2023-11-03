@@ -82,6 +82,7 @@
 			"type": "client",
 			"language": "typescript",
 			"gitUrl": "fireboomio/sdk-template_miniapp",
+			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/miniapp",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/miniapp.svg"
 		},
