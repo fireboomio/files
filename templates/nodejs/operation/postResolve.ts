@@ -5,4 +5,5 @@ import { <%= it.operationName %>Input, <%= it.operationName %>ResponseData } fro
 registerPostResolve<<%= it.operationName %>Input, <%= it.operationName %>ResponseData, FireboomOperationsDefinition>('<%= it.operationPath %>', async ctx => {
 	// TODO
   // console.log(ctx.input)
+  return ctx.response
 })

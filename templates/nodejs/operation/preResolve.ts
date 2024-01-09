@@ -4,4 +4,5 @@ import { <%= it.operationName %>Input, <%= it.operationName %>ResponseData } fro
 
 registerPreResolve<<%= it.operationName %>Input, <%= it.operationName %>ResponseData, FireboomOperationsDefinition>('<%= it.operationPath %>', async ctx => {
   console.log(ctx.input)
+  return ctx.input
 })
