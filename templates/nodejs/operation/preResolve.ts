@@ -1,7 +1,7 @@
 import { registerPreResolve } from '@fireboom/server'
-import { type FireboomRequestContext } from '@/operations'
+import { type FireboomOperationsDefinition } from '@/operations'
 import { <%= it.operationName %>Input, <%= it.operationName %>ResponseData } from '@/models'
 
-registerPreResolve<<%= it.name %>Input, <%= it.operationName %>ResponseData, FireboomRequestContext>('<%= it.operationPath %>', async (ctx: FireboomRequestContext) => {
+registerPreResolve<<%= it.operationName %>Input, <%= it.operationName %>ResponseData, FireboomOperationsDefinition>('<%= it.operationPath %>', async ctx => {
   console.log(ctx.input)
 })

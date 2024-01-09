@@ -1,8 +1,8 @@
 import { registerCustomResolve } from '@fireboom/server'
-import { type FireboomRequestContext } from '@/operations'
+import { type FireboomOperationsDefinition } from '@/operations'
 import { <%= it.operationName %>Input, <%= it.operationName %>ResponseData } from '@/models'
 
-registerCustomResolve<<%= it.name %>Input, <%= it.operationName %>ResponseData, FireboomRequestContext>('<%= it.operationPath %>', async (ctx: FireboomRequestContext) => {
+registerCustomResolve<<%= it.operationName %>Input, <%= it.operationName %>ResponseData, FireboomOperationsDefinition>('<%= it.operationPath %>', async ctx => {
   return {
     response: 'custom response'
   }
