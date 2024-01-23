@@ -24,7 +24,7 @@
 			"type": "server",
 			"language": "golang",
 			"gitUrl": "fireboomio/sdk-template_go-server",
-			"gitBranch": "V2.0",
+			"gitBranch": "V2.1",
 			"outputPath": "./custom-go",
 			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/golang.svg"
 		},
