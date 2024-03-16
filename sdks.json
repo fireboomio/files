@@ -12,7 +12,12 @@
 			"gitUrl": "fireboomio/sdk-template_nodejs-server",
 			"outputPath": "./custom-ts",
 			"gitBranch": "V2.0",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/nodejs.svg"
+			"icon": "https://file.fireboom.ioicons/nodejs.svg",
+			"functions": {
+				"customize": true,
+				"proxy": true,
+				"function": true
+			}
 		},
 		{
 			"title": "Golang server",
@@ -26,7 +31,12 @@
 			"gitUrl": "fireboomio/sdk-template_go-server",
 			"gitBranch": "V2.1",
 			"outputPath": "./custom-go",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/golang.svg"
+			"icon": "https://file.fireboom.ioicons/golang.svg",
+			"functions": {
+				"customize": true,
+				"proxy": true,
+				"function": true
+			}
 		},
 		{
 			"title": "Java server",
@@ -42,7 +52,12 @@
 			"outputPath": "./custom-java",
 			"codePackage": "src/main/java/io/fireboom",
 			"upperFirst": true,
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/java.svg"
+			"icon": "https://file.fireboom.ioicons/java.svg",
+			"functions": {
+				"customize": true,
+				"proxy": false,
+				"function": false
+			}
 		},
 		{
 			"title": "Typescript client",
@@ -56,7 +71,7 @@
 			"gitUrl": "fireboomio/sdk-template_ts-client",
 			"gitBranch": "new",
 			"outputPath": "./generated-sdk/ts-client",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/typescript.svg"
+			"icon": "https://file.fireboom.ioicons/typescript.svg"
 		},
 		{
 			"title": "JavaScript client",
@@ -70,7 +85,7 @@
 			"gitUrl": "fireboomio/sdk-template_js-client",
 			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/js-client",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/javascript.svg"
+			"icon": "https://file.fireboom.ioicons/javascript.svg"
 		},
 		{
 			"title": "微信小程序",
@@ -84,7 +99,7 @@
 			"gitUrl": "fireboomio/sdk-template_miniapp",
 			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/miniapp",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/miniapp.svg"
+			"icon": "https://file.fireboom.ioicons/miniapp.svg"
 		},
 		{
 			"title": "Flutter",
@@ -98,7 +113,7 @@
 			"gitUrl": "fireboomio/sdk-template_flutter",
 			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/flutter",
-			"icon": "https://code.100ai.com.cn/fireboomio/files/raw/branch/main/icons/flutter.svg"
+			"icon": "https://file.fireboom.ioicons/flutter.svg"
 		}
 	],
 	"community": []
