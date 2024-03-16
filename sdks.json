@@ -12,7 +12,7 @@
 			"gitUrl": "fireboomio/sdk-template_nodejs-server",
 			"outputPath": "./custom-ts",
 			"gitBranch": "V2.0",
-			"icon": "https://file.fireboom.ioicons/nodejs.svg",
+			"icon": "https://files.fireboom.io/icons/nodejs.svg",
 			"functions": {
 				"customize": true,
 				"proxy": true,
@@ -31,7 +31,7 @@
 			"gitUrl": "fireboomio/sdk-template_go-server",
 			"gitBranch": "V2.1",
 			"outputPath": "./custom-go",
-			"icon": "https://file.fireboom.ioicons/golang.svg",
+			"icon": "https://files.fireboom.io/icons/golang.svg",
 			"functions": {
 				"customize": true,
 				"proxy": true,
@@ -52,7 +52,7 @@
 			"outputPath": "./custom-java",
 			"codePackage": "src/main/java/io/fireboom",
 			"upperFirst": true,
-			"icon": "https://file.fireboom.ioicons/java.svg",
+			"icon": "https://files.fireboom.io/icons/java.svg",
 			"functions": {
 				"customize": true,
 				"proxy": false,
@@ -71,7 +71,7 @@
 			"gitUrl": "fireboomio/sdk-template_ts-client",
 			"gitBranch": "new",
 			"outputPath": "./generated-sdk/ts-client",
-			"icon": "https://file.fireboom.ioicons/typescript.svg"
+			"icon": "https://files.fireboom.io/icons/typescript.svg"
 		},
 		{
 			"title": "JavaScript client",
@@ -85,7 +85,7 @@
 			"gitUrl": "fireboomio/sdk-template_js-client",
 			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/js-client",
-			"icon": "https://file.fireboom.ioicons/javascript.svg"
+			"icon": "https://files.fireboom.io/icons/javascript.svg"
 		},
 		{
 			"title": "微信小程序",
@@ -99,7 +99,7 @@
 			"gitUrl": "fireboomio/sdk-template_miniapp",
 			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/miniapp",
-			"icon": "https://file.fireboom.ioicons/miniapp.svg"
+			"icon": "https://files.fireboom.io/icons/miniapp.svg"
 		},
 		{
 			"title": "Flutter",
@@ -113,7 +113,7 @@
 			"gitUrl": "fireboomio/sdk-template_flutter",
 			"gitBranch": "V2.0",
 			"outputPath": "./generated-sdk/flutter",
-			"icon": "https://file.fireboom.ioicons/flutter.svg"
+			"icon": "https://files.fireboom.io/icons/flutter.svg"
 		}
 	],
 	"community": []
