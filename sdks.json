@@ -31,6 +31,7 @@
 			"gitUrl": "fireboomio/sdk-template_go-server",
 			"gitBranch": "V2.1",
 			"outputPath": "./custom-go",
+			"upperFirstStructName": true,
 			"icon": "https://files.fireboom.io/icons/golang.svg",
 			"functions": {
 				"customize": true,
@@ -51,7 +52,8 @@
 			"gitBranch": "V2.0",
 			"outputPath": "./custom-java",
 			"codePackage": "src/main/java/io/fireboom",
-			"upperFirst": true,
+			"upperFirstBasename": true,
+			"upperFirstStructName": true,
 			"icon": "https://files.fireboom.io/icons/java.svg",
 			"functions": {
 				"customize": true,
